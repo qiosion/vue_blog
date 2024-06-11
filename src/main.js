@@ -3,5 +3,6 @@ import App from './App.vue'
 // npm install bootstrap@5.3.3 로 부트스트랩 설치 후 사용
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import router from './router.js'
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')
