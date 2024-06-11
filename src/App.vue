@@ -21,13 +21,6 @@
   </div>
 </nav>
 
-<div class="container mt-4">
-  <h5>TEST TEST</h5>
-  <p>test page</p>
-</div>
-
-<!-- <List :blogData="blogData" /> -->
-
 <!-- 라우터로 설정한 컴포넌트를 보여줄 자리 -->
 <router-view :blogData="blogData"></router-view>
 
