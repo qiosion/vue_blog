@@ -26,7 +26,10 @@
   <p>test page</p>
 </div>
 
-<List :blogData="blogData" />
+<!-- <List :blogData="blogData" /> -->
+
+<!-- 라우터로 설정한 컴포넌트를 보여줄 자리 -->
+<router-view :blogData="blogData"></router-view>
 
 
 
@@ -37,7 +40,7 @@
 </template>
 
 <script>
-import List from './components/List.vue';
+// import List from './components/List.vue';
 import blog from './assets/blog.js'; // 해당 데이터를 List.vue 로 보내기 위해서는 props 를 사용한다
 
 export default {
@@ -48,7 +51,6 @@ export default {
     }
   },
   components: {
-    List,
   }
 }
 </script>
