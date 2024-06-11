@@ -5,13 +5,17 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#">Vue Blog</a>
+      <a class="navbar-brand" href="#">SUN the Bolt</a>
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">
+            <router-link to="/">HOME</router-link>
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">
+            <router-link to="/list">LIST</router-link>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -22,7 +26,9 @@
 </nav>
 
 <!-- 라우터로 설정한 컴포넌트를 보여줄 자리 -->
-<router-view :blogData="blogData"></router-view>
+<div class="mt-4">
+  <router-view :blogData="blogData"></router-view>
+</div>
 
 
 

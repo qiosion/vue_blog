@@ -1,6 +1,6 @@
 <template>
   <div v-for="(a, i) in blogData" :key="i">
-    <h5>{{ blogData[i].title }}</h5>
+    <h5 @click="goDetail(i)">{{ blogData[i].title }}</h5>
     <p>{{ blogData[i].date }}</p>
   </div>
   
@@ -17,6 +17,12 @@ export default {
   data() {
 
   },
+  methods: {
+    goDetail() {
+
+    }
+  },
+
 }
 </script>
 
